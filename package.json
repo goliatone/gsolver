@@ -1,8 +1,8 @@
 {
-  "name": "solver",
-  "description": "Object value solver",
+  "name": "gsolver",
+  "description": "Dynamic configuration gsolver",
   "version": "0.1.0",
-  "homepage": "https://github.com/goliatone/solver",
+  "homepage": "https://github.com/goliatone/gsolver",
   "author": {
     "name": "goliatone",
     "email": "hello@goliatone.com",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/goliatone/solver.git"
+    "url": "git://github.com/goliatone/gsolver.git"
   },
   "bugs": {
-    "url": "https://github.com/goliatone/solver/issues"
+    "url": "https://github.com/goliatone/gsolver/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/goliatone/solver/blob/master/LICENSE-MIT"
+      "url": "https://github.com/goliatone/gsolver/blob/master/LICENSE-MIT"
     }
   ],
   "main": "index",
@@ -31,7 +31,6 @@
   },
   "dependencies": {
     "gextend": "^0.1.6",
-    "gkeypath": "^0.1.10",
     "flattener": "^0.2.0"
   },
   "devDependencies": {

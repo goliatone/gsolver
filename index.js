@@ -1,4 +1,4 @@
 /**
- * Exports solver main library
+ * Exports gsolver main library
  */
-module.exports = require('./lib/solver');
+module.exports = require('./lib/gsolver');

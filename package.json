@@ -30,8 +30,9 @@
     "dtest": "./node_modules/mocha/bin/mocha test/*_test.js -G -w --reporter spec --slow 500"
   },
   "dependencies": {
+    "flattener": "^0.2.0",
     "gextend": "^0.1.6",
-    "flattener": "^0.2.0"
+    "gkeypath": "^0.2.0"
   },
   "devDependencies": {
     "mocha-sinon": "^1.1.4",

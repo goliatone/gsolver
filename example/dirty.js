@@ -11,7 +11,7 @@ var context = {
             city:'New York'
         }
     },
-    wtf: '${name}, how are you?'
+    greeting: '${name}, how are you?'
 };
 
 var solved = s.solve({
@@ -43,4 +43,4 @@ solved = s.solve(context);
 console.log('///////////////////')
 console.log(solved.name)
 console.log(solved.hola)
-console.log(solved.wtf)
+console.log(solved.greeting)

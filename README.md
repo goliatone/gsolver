@@ -33,7 +33,7 @@ Install the module with: `npm install solver`
 _(Coming soon)_
 
 ## Examples
-_(Coming soon)_
+Check out the [example][examples] directory in the github repository.
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
@@ -44,3 +44,5 @@ _(Nothing yet)_
 ## License
 Copyright (c) 2015 goliatone  
 Licensed under the MIT license.
+
+[examples]:https://github.com/goliatone/gsolver/tree/master/example

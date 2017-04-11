@@ -14,6 +14,8 @@ Check out the [example][examples] directory in the github repository.
 A quick example:
 
 ```js
+var Solver = require('..');
+
 var context = {
     nick: 'Peperone',
     greeting: 'Hello',
@@ -22,16 +24,25 @@ var context = {
         address: {
             city: 'New York'
         }
-    },
-    strings: {
-        message: '${hola} ${user.name}! Still living in ${user.address.city}?',
-        welcome: '${nick}, how are you?'
     }
 };
+
 var re = new Solver();
-var output = re.solve(context);
+
+var output = re.solve({
+    strings: {
+        message: '${greeting} ${user.name}! Still living in ${user.address.city}?',
+        welcome: '${nick}, how are you?'
+    },
+    references: {
+        user: '@{user}'
+    }
+}, context);
+
 console.log(output.strings.message); //Hello Pepe! Still living in New York?
 console.log(output.strings.welcome); // Peperone, how are you?
+
+console.log(output.references.user); // { name: 'Pepe', address: { city: 'New York' } }
 ```
 
 ## Documentation

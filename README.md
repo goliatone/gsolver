@@ -6,9 +6,6 @@ This library is a small utility to resolve an object's templated properties whic
 
 Install the module with: `npm install solver`
 
-## Documentation
-_(Coming soon)_
-
 ## Examples
 Check out the [example][examples] directory in the github repository.
 
@@ -32,6 +29,9 @@ var output = re.solve(context);
 console.log(output.strings.message); //Hello Pepe! Still living in New York?
 console.log(output.strings.welcome); // Peperone, how are you?
 ```
+
+## Documentation
+_(Coming soon)_
 
 ## License
 Copyright (c) 2015 goliatone  

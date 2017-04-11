@@ -5,9 +5,9 @@ var s = new Solver();
 var context = {
     name:'Pepe',
     hola: 'Hello',
-    user:{
+    user: {
         name: 'Peperone',
-        address:{
+        address: {
             city:'New York'
         }
     },
@@ -21,26 +21,31 @@ var solved = s.solve({
        nested: {
            templates: '${user.address.city}'
        }
-    }
+   }
 }, context);
-console.log('***********')
-console.log(solved.greet)
-console.log(solved.message)
-console.log(solved.testing)
 
+
+console.log('***********');
+console.log(solved.greet);
+console.log(solved.message);
+console.log(solved.testing);
+
+/*
+ *
+ */
 s.template.openTag = '@{';
 solved = s.solve({
     message:'@{name} was here!',
     greet: '@{hola}, @{user.address.city}?'
 }, context);
 
-console.log('|||||||||||||||||')
-console.log(solved.greet)
-console.log(solved.message)
+console.log('|||||||||||||||||');
+console.log(solved.greet);
+console.log(solved.message);
 
 s.template.openTag = '${';
 solved = s.solve(context);
-console.log('///////////////////')
-console.log(solved.name)
-console.log(solved.hola)
-console.log(solved.greeting)
+console.log('///////////////////');
+console.log(solved.name);
+console.log(solved.hola);
+console.log(solved.greeting);

@@ -9,6 +9,8 @@ Install the module with: `npm install solver`
 ## Examples
 Check out the [example][examples] directory in the github repository.
 
+A quick example:
+
 ```js
 var context = {
     nick: 'Peperone',

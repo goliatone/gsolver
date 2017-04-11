@@ -35,10 +35,11 @@
     "gkeypath": "^0.2.0"
   },
   "devDependencies": {
-    "mocha-sinon": "^1.1.4",
     "chai": "^2.2.0",
-    "sinon": "^1.14.1",
-    "mocha": "^2.2.4"
+    "mocha": "^2.2.4",
+    "mocha-sinon": "^1.1.4",
+    "noop-console": "^0.4.0",
+    "sinon": "^1.14.1"
   },
   "keywords": []
 }

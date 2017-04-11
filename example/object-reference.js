@@ -21,31 +21,10 @@ var solved = s.solve({
        nested: {
            templates: '${user.address.city}'
        }
-   }
+   },
+   userAddress: '@{user.address}'
 }, context);
-
 
 console.log('***********');
-console.log(solved.greet);
-console.log(solved.message);
-console.log(solved.testing);
-
-/*
- *
- */
-s.template.openTag = '@{';
-solved = s.solve({
-    message:'@{name} was here!',
-    greet: '@{hola}, @{user.address.city}?'
-}, context);
-
-console.log('|||||||||||||||||');
-console.log(solved.greet);
-console.log(solved.message);
-
-s.template.openTag = '${';
-solved = s.solve(context);
-console.log('///////////////////');
-console.log(solved.name);
-console.log(solved.hola);
-console.log(solved.greeting);
+console.log('address', solved.userAddress);
+console.assert(solved.userAddress === context.user.address);

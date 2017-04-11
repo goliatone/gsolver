@@ -3,12 +3,17 @@
 var assert = require('chai').assert;
 var sinon = require('sinon');
 var path = require('path');
-var fixture = path.resolve.bind(path, __dirname, 'fixtures');
+
+// var fixture = path.resolve.bind(path, __dirname, 'fixtures');
 
 sinon.assert.expose(assert, { prefix: '' });
 
 var Solver = require('..');
 
+/*
+ * Mute console :)
+ */
+Solver.prototype.logger = require('noop-console')();
 
 describe('Solver', function(){
 
@@ -82,6 +87,26 @@ describe('Solver', function(){
 
             var solved = solver.solve({
                 reference: '@{user.address}'
+            }, context);
+            assert.deepEqual(solved.reference, context.user.address);
+        });
+
+        it('should resolve object references with custom tags', function(){
+            var solver = new Solver({
+                objectOpenTag: '#{',
+                objectCloseTag: '}#'
+            });
+            var context = {
+                user: {
+                    name: 'Peperone',
+                    address: {
+                        city:'New York'
+                    }
+                }
+            };
+
+            var solved = solver.solve({
+                reference: '#{user.address}#'
             }, context);
             assert.deepEqual(solved.reference, context.user.address);
         });

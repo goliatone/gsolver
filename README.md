@@ -1,6 +1,12 @@
 # solver
 
-This library is a small utility to resolve an object's templated properties which might reference other properties in the same object or in a provided context object.
+This library is a small utility that it's used by [simple-config-loader][scl] to solve dependencies in configuration files.
+
+ It will resolve an object's templated properties which might reference other properties in the same object or in a provided context object.
+
+ Templated properties are strings that follow the syntax `${property}`. Properties can be nested within objects, `${property.name}`.
+
+
 
 [![Build Status](https://secure.travis-ci.org/goliatone/gsolver.png)](http://travis-ci.org/goliatone/gsolver)
 
@@ -46,10 +52,11 @@ console.log(output.references.user); // { name: 'Pepe', address: { city: 'New Yo
 ```
 
 ## Documentation
-_(Coming soon)_
+To see how it's being used, check [simple-config-loader][scl].
 
 ## License
 Copyright (c) 2015 goliatone  
 Licensed under the MIT license.
 
 [examples]:https://github.com/goliatone/gsolver/tree/master/example
+[scl]:https://github.com/goliatone/simple-config-loader

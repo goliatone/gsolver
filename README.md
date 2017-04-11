@@ -2,6 +2,8 @@
 
 This library is a small utility to resolve an object's templated properties which might reference other properties in the same object or in a provided context object.
 
+[![Build Status](https://secure.travis-ci.org/goliatone/gsolver.png)](http://travis-ci.org/goliatone/gsolver)
+
 ## Getting Started
 
 Install the module with: `npm install solver`

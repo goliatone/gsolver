@@ -2,9 +2,28 @@
 
 This library is a small utility that it's used by [simple-config-loader][scl] to solve dependencies in configuration files.
 
- It will resolve an object's templated properties which might reference other properties in the same object or in a provided context object.
+It will resolve an object's templated properties which might reference other properties in the same object or in a provided context object.
 
- Templated properties are strings that follow the syntax `${property}`. Properties can be nested within objects, `${property.name}`.
+Templated properties are strings that follow the syntax `${property}`. Properties can be nested within objects, `${property.name}`.
+
+
+You reference objects or properties by their keypath. A keypath is a string representing the location of a piece of data.
+
+```js
+var data = {
+    user: {
+        name: 'Peperone',
+        address: {
+            city: 'New York'
+        }
+    }
+};
+```
+
+You can reference strings or objects using two different syntaxes:
+
+* Object interpolation: `@{user}` or `@{user.address}`
+* String interpolation: `${user.name}` or `${user.address.city}`
 
 
 

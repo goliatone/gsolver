@@ -31,14 +31,14 @@
   },
   "dependencies": {
     "flattener": "^0.3.0",
-    "gextend": "^0.3.0",
-    "gkeypath": "^0.2.0"
+    "gextend": "^0.6.0",
+    "gkeypath": "^0.8.0"
   },
   "devDependencies": {
     "chai": "^2.2.0",
     "mocha": "^2.2.4",
     "mocha-sinon": "^1.1.4",
-    "noop-console": "^0.4.0",
+    "noop-console": "^0.8.0",
     "sinon": "^1.14.1"
   },
   "keywords": []

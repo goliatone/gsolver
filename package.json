@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "chai": "^2.2.0",
-    "mocha": "^2.2.4",
+    "mocha": "^10.2.0",
     "mocha-sinon": "^1.1.4",
     "noop-console": "^0.8.0",
     "sinon": "^1.14.1"
